@@ -2,8 +2,8 @@
 
 Building the image
 
-    docker build --tag multi-module .
+    ./gradlew jibDockerBuild
 
 Start and connect to the container
 
-    docker run -ti --rm multi-module bash
+    docker run -ti --rm jib/gradle-multi-module-docker-cache

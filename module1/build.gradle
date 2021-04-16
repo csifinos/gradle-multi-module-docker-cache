@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(":module2")
+}
+
+apply plugin: 'com.google.cloud.tools.jib'
+jib.to.image = "jib/${project.rootProject.name}:latest"
